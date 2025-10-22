@@ -1,0 +1,191 @@
+# Falcon Detection - .gitignore
+# NASA Space Apps Challenge 2025
+
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# ===================================
+# Node.js / React
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Production build
+frontend/build/
+frontend/dist/
+
+# Testing
+coverage/
+.nyc_output
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===================================
+# YOLO / Deep Learning
+# ===================================
+# Model weights (comment out if you want to track them)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# Training outputs
+runs/
+wandb/
+mlruns/
+
+# Datasets (uncomment if large)
+# train_3/
+# test3/
+# *.jpg
+# *.jpeg
+# *.png
+
+# ===================================
+# Images & Media
+# ===================================
+# Uncomment if you want to ignore all images
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.ico
+# *.svg
+# *.webp
+
+# ===================================
+# Logs
+# ===================================
+*.log
+logs/
+*.log.*
+
+# ===================================
+# OS Generated
+# ===================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===================================
+# Temporary Files
+# ===================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~.nib
+*.bak
+*.cache
+
+# ===================================
+# Environment Variables
+# ===================================
+.env
+.env.*
+!.env.example
+
+# ===================================
+# Database
+# ===================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# Project Specific
+# ===================================
+# Uncomment if you don't want to track model weights
+# yolo*.pt
+# best.pt
+# last.pt
+
+# Detection results
+detections/
+output/
+results/
+
+# Temporary test files
+test_output/
+temp_uploads/
+
+# User-specific paths in config
+config.local.yaml
