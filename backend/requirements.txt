@@ -1,0 +1,24 @@
+# Falcon Detection Backend Requirements
+# NASA Space Apps Challenge 2025
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Deep Learning
+ultralytics==8.3.214
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+opencv-python==4.9.0.80
+Pillow==10.2.0
+numpy==1.26.3
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.5.3
+
+# Optional: For GPU acceleration
+# onnxruntime-gpu==1.17.0

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-10-16T05:45:46.448093",
+  "model_path": "runs\\train\\falcon_yolov8m_final\\weights\\best.pt",
+  "device": "cuda",
+  "test_dataset": "C:\\Users\\jaink\\OneDrive\\Desktop\\project\\web_app\\test3\\images",
+  "overall_metrics": {
+    "mAP50": 0.7945487464654206,
+    "mAP50_95": 0.6684388493049446,
+    "precision": 0.9053463455653412,
+    "recall": 0.6351748372718209,
+    "f1_score": 0.7465696987821144
+  },
+  "per_class_metrics": {
+    "Oxygen_Tank": {
+      "precision": 0.922360248447205,
+      "recall": 0.7729342875731945,
+      "mAP50": 0.8744203516615883
+    },
+    "Nitrogen_Tank": {
+      "precision": 0.880443388756928,
+      "recall": 0.7249022164276402,
+      "mAP50": 0.8400645431754685
+    },
+    "First_Aid_Box": {
+      "precision": 0.9116666666666666,
+      "recall": 0.7012820512820512,
+      "mAP50": 0.832066119006569
+    },
+    "Fire_Alarm": {
+      "precision": 0.8900523560209425,
+      "recall": 0.5151515151515151,
+      "mAP50": 0.7212660051767659
+    },
+    "Safety_Switch_Panel": {
+      "precision": 0.9426751592356688,
+      "recall": 0.6651685393258427,
+      "mAP50": 0.8196451582234701
+    },
+    "Emergency_Phone": {
+      "precision": 0.8875502008032129,
+      "recall": 0.5187793427230047,
+      "mAP50": 0.7263477758631591
+    },
+    "Fire_Extinguisher": {
+      "precision": 0.902676399026764,
+      "recall": 0.5480059084194978,
+      "mAP50": 0.7480312721509235
+    }
+  }
+}

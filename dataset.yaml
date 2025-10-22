@@ -1,0 +1,50 @@
+# Falcon Object Detection Dataset Configuration
+# NASA Space Apps Challenge 2025
+# Using train_3 and test3 data
+
+# Dataset root path
+path: C:\Users\jaink\OneDrive\Desktop\project\web_app
+
+# Image directories (relative to path above)
+train: train_3/train3/images
+val: train_3/val3/images
+test: test3/images
+
+# Number of classes
+nc: 7
+
+# Class names (7 critical space safety objects)
+names:
+  0: Oxygen_Tank
+  1: Nitrogen_Tank
+  2: First_Aid_Box
+  3: Fire_Alarm
+  4: Safety_Switch_Panel
+  5: Emergency_Phone
+  6: Fire_Extinguisher
+
+# Dataset Information
+info:
+  description: "NASA Space Apps Challenge 2025 - Falcon Synthetic Dataset"
+  team: "Duality AI"
+  train_images: 1769
+  val_images: 338
+  test_images: 1408
+  total_images: 3515
+  target_mAP: 0.95
+  target_fps: 20
+
+# Training Parameters (recommended)
+training:
+  epochs: 70-100
+  batch_size: 16
+  image_size: 640
+  optimizer: AdamW
+  learning_rate: 0.001
+  augmentations:
+    - Mosaic
+    - MixUp
+    - CLAHE
+    - HSV_jitter
+    - Perspective
+    - Random_erasing
